@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davi Braz | Desenvolvedor de Software</title>
+  <meta name="description" content="Portfólio de Davi Braz — Desenvolvedor de Software especializado em criar soluções web modernas, rápidas e escaláveis." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="progress-bar" id="progressBar"></div>
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Davi<span>.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Início</a></li>
+        <li><a href="#about" class="nav-link">Sobre</a></li>
+        <li><a href="#skills" class="nav-link">Habilidades</a></li>
+        <li><a href="#projects" class="nav-link">Projetos</a></li>
+        <li><a href="#experience" class="nav-link">Experiência</a></li>
+        <li><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Vamos falar</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Olá, eu sou</p>
+        <h1 class="hero-title reveal">
+          Davi Braz
+          <span class="text-gradient">Desenvolvedor de Software</span>
+        </h1>
+        <p class="hero-subtitle reveal">
+          Eu construo experiências digitais rápidas, acessíveis e bem cuidadas —
+          do design à entrega em produção. Foco em código limpo e resultado real para o negócio.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#projects" class="btn btn-primary">Ver projetos</a>
+          <a href="#contact" class="btn btn-outline">Fale comigo</a>
+        </div>
+
+        <div class="hero-social reveal">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 015.73 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.8 1.18 1.83 1.18 3.09 0 4.42-2.69 5.4-5.25 5.68.41.36.78 1.06.78 2.15 0 1.55-.01 2.8-.01 3.19 0 .3.21.66.8.55A11.5 11.5 0 0023.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+          <a href="mailto:davimbraz@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6h16v12H4z"/><path d="M4 6l8 7 8-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Sobre mim</span>
+          <h2>Quem eu sou</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo reveal">
+            <div class="photo-frame">
+              <div class="photo-placeholder">DB</div>
+            </div>
+            <div class="badge-card">
+              <strong>3+</strong>
+              <span>anos de experiência</span>
+            </div>
+          </div>
+
+          <div class="about-text reveal">
+            <p>
+              Sou desenvolvedor de software com foco em construir produtos digitais que unem
+              <strong>boa engenharia</strong> e <strong>boa experiência de uso</strong>. Trabalho do
+              planejamento à entrega, cuidando de performance, acessibilidade e manutenibilidade do código.
+            </p>
+            <p>
+              Gosto de resolver problemas reais, aprender coisas novas e colaborar de forma direta com
+              design e produto para transformar ideias em interfaces que funcionam de verdade.
+            </p>
+
+            <div class="about-info">
+              <div>
+                <span class="label">Nome</span>
+                <span class="value">Davi Braz</span>
+              </div>
+              <div>
+                <span class="label">Função</span>
+                <span class="value">Desenvolvedor de Software</span>
+              </div>
+              <div>
+                <span class="label">E-mail</span>
+                <span class="value">davimbraz@gmail.com</span>
+              </div>
+              <div>
+                <span class="label">Localização</span>
+                <span class="value">Brasil · Remoto</span>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">Vamos conversar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Habilidades</span>
+          <h2>Ferramentas que eu uso</h2>
+          <p class="section-desc">Um resumo das tecnologias com as quais tenho mais experiência prática.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">💻</div>
+            <h3>Front-end</h3>
+            <p>HTML, CSS, JavaScript, React</p>
+            <div class="skill-bar"><span style="width: 90%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">⚙️</div>
+            <h3>Back-end</h3>
+            <p>Node.js, APIs REST, Bancos de dados</p>
+            <div class="skill-bar"><span style="width: 80%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🎨</div>
+            <h3>UI / UX</h3>
+            <p>Design de interfaces, prototipação</p>
+            <div class="skill-bar"><span style="width: 75%"></span></div>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🚀</div>
+            <h3>Deploy & DevOps</h3>
+            <p>Git, CI/CD, Cloud</p>
+            <div class="skill-bar"><span style="width: 70%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Portfólio</span>
+          <h2>Projetos em destaque</h2>
+          <p class="section-desc">Uma seleção de trabalhos recentes. Substitua pelos seus projetos reais.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-1"></div>
+            <div class="project-body">
+              <h3>Projeto Um</h3>
+              <p>Descrição curta do projeto: o problema que resolve e o principal resultado alcançado.</p>
+              <div class="tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Ver projeto →</a>
+                <a href="#" target="_blank" rel="noopener">Código →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-2"></div>
+            <div class="project-body">
+              <h3>Projeto Dois</h3>
+              <p>Descrição curta do projeto: o problema que resolve e o principal resultado alcançado.</p>
+              <div class="tags">
+                <span>Next.js</span><span>TypeScript</span><span>Postgres</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Ver projeto →</a>
+                <a href="#" target="_blank" rel="noopener">Código →</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-thumb thumb-3"></div>
+            <div class="project-body">
+              <h3>Projeto Três</h3>
+              <p>Descrição curta do projeto: o problema que resolve e o principal resultado alcançado.</p>
+              <div class="tags">
+                <span>Vue</span><span>Firebase</span><span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank" rel="noopener">Ver projeto →</a>
+                <a href="#" target="_blank" rel="noopener">Código →</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Trajetória</span>
+          <h2>Experiência</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2024 — Atual</span>
+              <h3>Desenvolvedor de Software</h3>
+              <p class="timeline-company">Nome da Empresa</p>
+              <p>Descreva aqui suas principais responsabilidades e conquistas nessa posição.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 — 2024</span>
+              <h3>Desenvolvedor Front-end</h3>
+              <p class="timeline-company">Nome da Empresa Anterior</p>
+              <p>Descreva aqui suas principais responsabilidades e conquistas nessa posição.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2021 — 2022</span>
+              <h3>Formação / Início na área</h3>
+              <p class="timeline-company">Curso / Faculdade</p>
+              <p>Descreva aqui sua formação, cursos ou o início da sua jornada na programação.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="tag">Contato</span>
+          <h2>Vamos trabalhar juntos?</h2>
+          <p class="section-desc">Tem um projeto em mente ou uma proposta? Me envie uma mensagem.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input type="text" id="subject" name="subject" placeholder="Sobre o que é?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+            <p class="form-note" id="formNote"></p>
+          </form>
+
+          <div class="contact-info reveal">
+            <div class="info-card">
+              <span class="info-icon">📧</span>
+              <div>
+                <span class="label">E-mail</span>
+                <a href="mailto:davimbraz@gmail.com">davimbraz@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <span class="label">Localização</span>
+                <span class="value">Brasil · Disponível para remoto</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">🔗</span>
+              <div>
+                <span class="label">Redes</span>
+                <div class="info-social">
+                  <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+                  <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">Davi<span>.</span></a>
+      <p>© <span id="year"></span> Davi Braz. Todos os direitos reservados.</p>
+      <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
