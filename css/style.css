@@ -375,15 +375,17 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height
 .about-photo { position: relative; justify-self: center; }
 .photo-frame {
   width: 300px; height: 300px;
-  border-radius: var(--radius-lg);
+  border-radius: 50%;
   background: var(--gradient);
   padding: 6px;
   box-shadow: var(--shadow-lg);
+  overflow: hidden;
 }
 .photo-img {
   width: 100%; height: 100%;
-  border-radius: calc(var(--radius-lg) - 6px);
+  border-radius: 50%;
   object-fit: cover;
+  display: block;
 }
 .badge-card {
   position: absolute;
