@@ -376,8 +376,6 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height
 .photo-frame {
   width: 300px; height: 300px;
   border-radius: 50%;
-  background: var(--gradient);
-  padding: 6px;
   box-shadow: var(--shadow-lg);
   overflow: hidden;
 }
