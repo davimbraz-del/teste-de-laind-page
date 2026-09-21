@@ -5,8 +5,6 @@
   const themeToggle = document.getElementById('themeToggle');
   const progressBar = document.getElementById('progressBar');
   const toTop = document.getElementById('toTop');
-  const contactForm = document.getElementById('contactForm');
-  const formNote = document.getElementById('formNote');
   const yearEl = document.getElementById('year');
 
   // Footer year
@@ -78,15 +76,4 @@
     });
   }, { threshold: 0.15 });
   revealEls.forEach((el) => observer.observe(el));
-
-  // Contact form (client-side only demo)
-  contactForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const data = new FormData(contactForm);
-    const name = (data.get('name') || '').toString().trim();
-
-    formNote.style.color = 'var(--accent-2)';
-    formNote.textContent = `Obrigado, ${name || 'visitante'}! Sua mensagem foi preparada — conecte este formulário a um serviço de envio (ex: Formspree, EmailJS) para receber os e-mails.`;
-    contactForm.reset();
-  });
 })();

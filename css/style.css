@@ -546,28 +546,27 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height
   box-shadow: var(--shadow-md);
 }
 
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.form-group { margin-bottom: 20px; }
-.form-group label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 8px; color: var(--text-muted); }
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 13px 16px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border);
-  background: var(--surface-2);
-  color: var(--text);
-  font-size: 14.5px;
-  resize: vertical;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+.whatsapp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 6px;
 }
-.form-group input:focus, .form-group textarea:focus {
-  outline: none;
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 25%, transparent);
+.whatsapp-icon {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  background: color-mix(in srgb, #25d366 15%, transparent);
+  color: #25d366;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 8px;
 }
-
-.form-note { margin-top: 14px; font-size: 14px; color: var(--accent-2); min-height: 20px; }
+.whatsapp-icon svg { width: 32px; height: 32px; }
+.whatsapp-card h3 { font-size: 22px; margin-bottom: 10px; }
+.whatsapp-card p { color: var(--text-muted); margin-bottom: 26px; max-width: 380px; }
+.whatsapp-card .btn { background: #25d366; box-shadow: 0 10px 30px -10px rgba(37, 211, 102, 0.5); }
+.whatsapp-card .btn:hover { box-shadow: 0 15px 35px -8px rgba(37, 211, 102, 0.65); }
 
 .contact-info { display: flex; flex-direction: column; gap: 20px; }
 .info-card {
