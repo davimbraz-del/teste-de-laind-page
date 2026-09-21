@@ -380,15 +380,10 @@ h1, h2, h3, h4 { font-family: var(--font-heading); font-weight: 700; line-height
   padding: 6px;
   box-shadow: var(--shadow-lg);
 }
-.photo-placeholder {
+.photo-img {
   width: 100%; height: 100%;
   border-radius: calc(var(--radius-lg) - 6px);
-  background: var(--surface);
-  display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-heading);
-  font-size: 72px;
-  font-weight: 800;
-  color: var(--text-dim);
+  object-fit: cover;
 }
 .badge-card {
   position: absolute;
